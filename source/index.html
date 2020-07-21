@@ -26,6 +26,7 @@
     </div>
   </header>
 
+
   <!-- Intro -->
   <section class="section">
     <div class="container">
@@ -36,6 +37,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Services -->
   <section class="section">
@@ -68,11 +70,13 @@
     </div><!-- ./container -->
   </section><!-- ./section -->
 
+
   <!-- About -->
   <section class="section">
     <div class="container">
+      <h2 class="section__title">Как это работает</h2>
+
       <div class="about">
-        <h2 class="about__title">Как это работает</h2>
 
         <div class="about__item">
           <h3 class="about__title">1</h3>
@@ -115,6 +119,80 @@
       </div><!-- ./about -->
     </div><!-- ./container -->
   </section><!-- ./section -->
+
+
+  <!-- Example -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Живой пример</h2>
+
+      <div class="example">
+        <div class="example__content">
+          <div class="example__content-text">
+            Борис сбросил 5 кг за 2 месяца, просто
+            заменив свой обычный корм на Cat
+            Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не
+            менял своих привычек и по-прежнему
+            спит по 16 часов в день.
+          </div>
+
+          <div class="example__content-fieldsets">
+            <fieldset class="example__content-fieldset">
+              <legend class="example__content-legend">снижение веса</legend>
+              <p class="example__content-text">5 КГ</p>
+            </fieldset>
+            <fieldset class="example__content-fieldset">
+              <legend class="example__content-legend">затрачено времени</legend>
+              <p class="example__content-text">60 ДНЕЙ</p>
+            </fieldset>
+          </div>
+
+          <div class="example__cost">
+            Затраты на питание: 15 000 РУБ.
+          </div>
+        </div><!-- ./example__content -->
+        <div class="example__slider">
+          <div class="example__slider-photo__inner"><!-- pos: relative для 2 картинки -->
+            <img class="example__slider-photo" src="https://placehold.it/300" alt="">
+            <img class="example__slider-photo" src="https://placehold.it/250" alt=""> <!-- pos: absolute и не забыть прописать object-fit: contain для восстановления пропорций картинке на позиционированнии-->
+          </div>
+          <div class="example__slider-range">
+            <p class="example__slider-text">было</p>
+
+            <div class="example__slider-scale">
+              <div class="example__slider-toggle" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0"></div><!-- min max now надо вычеслять динамически, по ширине слайдера, например От 0 до 768-->
+            </div>
+
+            <p class="example__slider-text">стало</p>
+          </div>
+        </div><!-- ./example__slider -->
+
+      </div><!-- ./example -->
+    </div><!-- ./container -->
+  </section><!-- ./section -->
+
+
+  <!-- Address -->
+  <div class="address">
+    <div class="container">
+      <div class="address__inner">
+        <div class="address__title">приглашаем к сотрудничеству дилеров!</div>
+        <div class="address__text">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Map -->
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1595345413282!5m2!1sru!2sua"
+      style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+
 
   <!-- Footer -->
   <footer class="footer">
