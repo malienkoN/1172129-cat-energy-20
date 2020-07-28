@@ -2,7 +2,7 @@
 .nav {
   display: none;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   padding-top: 17px;
 
   &__link {
@@ -15,7 +15,7 @@
     line-height: 1;
     font-weight: 500;
     text-transform: uppercase;
-    color: #000;
+    color: #000000;
     text-decoration: none;
 
     border-top: 1px solid #e6e6e6;
@@ -59,7 +59,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
   position: relative;
 
   &:before,
@@ -67,7 +67,7 @@
     content: "";
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: #000000;
     position: absolute;
     left: 0;
     z-index: 1;
@@ -143,7 +143,7 @@
       z-index: 1;
     }
   }
-  
+
   .nav-toggle {
     display: none;
   }

@@ -15,7 +15,7 @@
   text-decoration: none;
   cursor: pointer;
   outline: none;
-  
+
   &--block{
     display: block;
     width: 100%;
@@ -159,7 +159,7 @@
   }
 
   &__item {
-    fill: #666;
+    fill: #666666;
     width: 23px;
     height: 16px;
     transition: fill .2s linear, opacity .2s linear;
