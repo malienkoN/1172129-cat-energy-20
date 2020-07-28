@@ -29,6 +29,7 @@
 /* Section */
 .section {
   padding: 14px 0;
+
   &--intro {
     padding-top: 0;
   }
@@ -43,6 +44,7 @@
 
   &__logo {
     transition: opacity 0.2s linear;
+
     &:hover {
       opacity: 0.8;
     }
@@ -109,6 +111,7 @@
 /* Footer */
 .footer {
   background: #f2f2f2;
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -121,6 +124,7 @@
     width: 128px;
     height: 24px;
     transition: opacity 0.2s linear;
+
     &:hover {
       opacity: 0.8;
     }
@@ -156,6 +160,7 @@
     width: 23px;
     height: 16px;
     transition: fill 0.2s linear, opacity 0.2s linear;
+
     &:hover {
       fill: #68b738;
     }
@@ -175,6 +180,7 @@
   justify-content: space-between;
   width: 100%;
   border-top: 1px solid #d9d9d9;
+
   &__logo {
     fill: #666666;
     width: 27px;
@@ -189,6 +195,7 @@
   &__link {
     text-decoration: none;
     transition: opacity 0.2s linear;
+
     &:active {
       opacity: 0.3;
     }
@@ -216,13 +223,16 @@
       padding-bottom: 0;
     }
   }
+
   .social {
     padding: 0;
+
     &__item {
       width: 30px;
       height: 22px;
     }
   }
+  
   .copyright {
     justify-content: space-around;
     width: 163px;

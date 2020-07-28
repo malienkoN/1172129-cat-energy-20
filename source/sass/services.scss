@@ -124,6 +124,7 @@
       font-size: 36px;
       line-height: 1;
       padding-right: 449px;
+
       &::before {
         top: -5%;
         left: 72%;
@@ -174,6 +175,7 @@
 
     &__item {
       padding: 77px 51px 55px 52px;
+
       &:first-child {
         margin-bottom: 0;
       }
@@ -182,6 +184,7 @@
     &__title {
       padding: 0 0 0 162px;
       margin-bottom: 73px;
+
       &::before {
         top: -106%;
         left: 3%;
@@ -198,7 +201,7 @@
     }
 
     &__title--pro {
-      &::before{
+      &::before {
         top: -27%;
         left: -4%;
         width: 134px;
