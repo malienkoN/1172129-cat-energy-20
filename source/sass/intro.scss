@@ -1,0 +1,32 @@
+/* Intro */
+.intro {
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  &__title {
+    padding-top: 27px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+  &__subtitle{
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: relative;
+    &:after{
+      content: "";
+      background: url(../img/index-can-mobile@1x.png) no-repeat center;
+      background-size: cover;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
