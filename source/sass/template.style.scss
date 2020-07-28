@@ -3,7 +3,7 @@
   display: inline-block;
   vertical-align: middle;
   padding: 7px 44px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 1.3;
   color: #ffffff;
@@ -16,12 +16,12 @@
   cursor: pointer;
   outline: none;
 
-  &--block{
+  &--block {
     display: block;
     width: 100%;
   }
 
-  &:hover{
+  &:hover {
     background: #5eaa2f;
   }
 }
@@ -29,23 +29,20 @@
 /* Section */
 .section {
   padding: 14px 0;
-
-  &--intro{
+  &--intro {
     padding-top: 0;
   }
 }
 
 /* Header */
 .header {
-
   &__inner {
     padding: 12px 0 17px;
     position: relative;
   }
 
   &__logo {
-    transition: opacity .2s linear;
-
+    transition: opacity 0.2s linear;
     &:hover {
       opacity: 0.8;
     }
@@ -76,7 +73,6 @@
 /* Header Mdia */
 @media (min-width: 768px) {
   .header {
-
     &__inner {
       padding-top: 24px;
       display: flex;
@@ -96,7 +92,6 @@
 
 @media (min-width: 1250px) {
   .header {
-
     &__inner {
       padding-top: 53px;
     }
@@ -114,7 +109,6 @@
 /* Footer */
 .footer {
   background: #f2f2f2;
-
   &__inner {
     display: flex;
     flex-direction: column;
@@ -126,8 +120,7 @@
   &__logo {
     width: 128px;
     height: 24px;
-    transition: opacity .2s linear;
-
+    transition: opacity 0.2s linear;
     &:hover {
       opacity: 0.8;
     }
@@ -162,8 +155,7 @@
     fill: #666666;
     width: 23px;
     height: 16px;
-    transition: fill .2s linear, opacity .2s linear;
-
+    transition: fill 0.2s linear, opacity 0.2s linear;
     &:hover {
       fill: #68b738;
     }
@@ -183,12 +175,11 @@
   justify-content: space-between;
   width: 100%;
   border-top: 1px solid #d9d9d9;
-
   &__logo {
     fill: #666666;
     width: 27px;
     height: 34px;
-    transition: fill .2s linear;
+    transition: fill 0.2s linear;
 
     &:hover {
       fill: #68b738;
@@ -197,7 +188,7 @@
 
   &__link {
     text-decoration: none;
-    transition: opacity .2s linear;
+    transition: opacity 0.2s linear;
     &:active {
       opacity: 0.3;
     }
@@ -214,7 +205,6 @@
 /* Footer Media*/
 @media (min-width: 768px) {
   .footer {
-
     &__inner {
       padding: 55px 0 61px;
       flex-direction: row;
@@ -228,7 +218,6 @@
   }
   .social {
     padding: 0;
-
     &__item {
       width: 30px;
       height: 22px;
@@ -244,7 +233,6 @@
 
 @media (min-width: 1250px) {
   .footer {
-
     &__inner {
       padding: 57px 0 58px;
     }
