@@ -48,13 +48,11 @@ ul, ol{
 @media (min-width: 768px){
   .container{
     max-width: 738px;
-    padding: 0 15px;
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1250px){
   .container{
-    min-width: 1200px;
-    padding: 0 15px;
+    max-width: 1250px;
   }
 }

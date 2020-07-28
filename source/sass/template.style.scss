@@ -1,16 +1,11 @@
 /* Header */
-
 .header{
-  display: flex;
-  padding-top: 11px;
   &__inner{
-    padding-bottom: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 12px 0 17px;
     position: relative;
   }
   &__logo{
+    transition: opacity .2s linear;
     &:hover{
       opacity: 0.8;
     }
@@ -37,6 +32,12 @@
 /* Header Mdia */
 @media (min-width: 768px){
   .header{
+    &__inner{
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__logo--mobile{
       display: none;
     }
@@ -46,8 +47,11 @@
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1250px){
   .header{
+    &__inner{
+      padding-top: 53px;
+    }
     &__logo--tablet{
       display: none;
     }
@@ -57,4 +61,125 @@
   }
 }
 
+/* Footer */
+.footer{
+  background: #F2F2F2;
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 39px 0 22px;
+  }
+  &__logo{
+    width: 128px;
+    height: 24px;
+    transition: opacity .2s linear;
+    &:hover{
+      opacity: 0.8;
+    }
+    &:active{
+      opacity: 0.6;
+    }
+  }
+  &__logo-link{
+    padding-bottom: 32px;
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+    text-align: center;
+  }
+}
 
+/* Social */
+.social{
+  padding: 20px 0;
+  width: 130px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__item-link{
+    text-decoration: none;
+  }
+  &__item{
+    fill: #666;
+    width: 23px;
+    height: 16px;
+    transition: fill .2s linear, opacity .2s linear;
+    &:hover{
+      fill: #68B738;
+    }
+    &:active{
+      opacity: 0.3;
+    }
+  }
+}
+
+
+/* Copyright */
+.copyright{
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #D9D9D9;
+  &__logo{
+    fill: #666;
+    width: 27px;
+    height: 34px;
+    transition: fill .2s linear;
+    &:hover{
+      fill: #68B738;
+    }
+  }
+  &__link{
+    text-decoration: none;
+    transition: opacity .2s linear;
+    &:active{
+      opacity: 0.3;
+    }
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #444;
+  }
+}
+
+/* Footer Media*/
+@media (min-width: 768px){
+  .footer{
+    &__inner{
+      padding: 55px 0 61px;
+      flex-direction: row;
+    }
+    &__logo-link{
+      border: none;
+      width: auto;
+      padding-bottom: 0;
+    }
+  }
+  .social{
+    padding: 0;
+    &__item{
+      width: 30px;
+      height: 22px;
+    }
+  }
+  .copyright{
+    justify-content: space-around;
+    width: 163px;
+    padding-top: 0;
+    border: none;
+  }
+}
+
+@media (min-width: 1250px){
+  .footer{
+    &__inner{
+      padding: 57px 0 58px;
+    }
+  }
+}
