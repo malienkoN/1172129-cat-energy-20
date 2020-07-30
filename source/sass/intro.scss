@@ -1,8 +1,8 @@
 /* Intro */
 .intro {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat center top;
   text-align: center;
   padding-top: 27px;
+  position: relative;
 
   &__title {
     margin-bottom: 25px;
@@ -37,8 +37,7 @@
 @media (min-width: 768px) {
   .intro {
     padding-left: 90px;
-    padding-bottom: 465px;
-    background: none;
+    padding-bottom: 405px;
     text-align: left;
     &::after {
       content: "";
@@ -47,8 +46,8 @@
       background: url("../img/index-can-desktop@1x.png") no-repeat;
 
       position: absolute;
-      top: 38%;
-      left: 16%;
+      top: 33%;
+      left: 13%;
       z-index: -1;
     }
 
@@ -73,6 +72,17 @@
       display: inline-block;
       padding: 14px 26px;
       font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .intro{
+    padding-bottom: 122px;
+    &::after{
+      top: -13%;
+      left: 37%;
+      z-index: 1;
     }
   }
 }

@@ -32,6 +32,30 @@
 
   &--intro {
     padding-top: 0;
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+  }
+}
+
+@media (min-width: 768px) {
+  .section{
+    padding: 22px 0;
+
+    &--intro {
+      padding-top: 0;
+      background: none;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .section{
+    padding: 40px 0;
+
+    &--intro {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -94,6 +118,12 @@
 }
 
 @media (min-width: 1250px) {
+  .header-wrapper {
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-position: top right;
+    background-size: 50%;
+  }
+
   .header {
     &__inner {
       padding-top: 53px;
