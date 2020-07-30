@@ -20,6 +20,7 @@
     color: #ffffff;
     text-transform: uppercase;
     position: relative;
+
     &::after {
       content: "";
       width: 280px;
@@ -39,6 +40,7 @@
     padding-left: 90px;
     padding-bottom: 405px;
     text-align: left;
+
     &::after {
       content: "";
       width: 508px;
@@ -62,6 +64,7 @@
       max-width: 283px;
       font-size: 20px;
       color: #000000;
+
       &::after {
         display: none;
       }
@@ -77,9 +80,10 @@
 }
 
 @media (min-width: 1250px) {
-  .intro{
+  .intro {
     padding-bottom: 122px;
-    &::after{
+
+    &::after {
       top: -13%;
       left: 37%;
       z-index: 1;
