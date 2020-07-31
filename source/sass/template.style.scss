@@ -30,15 +30,28 @@
 .section {
   padding: 14px 0;
 
+  &__title {
+    font-size: 36px;
+    line-height: 1.1;
+    color: #000000;
+    font-weight: 400;
+  }
+
   &--intro {
     padding-top: 0;
     background: url("../img/index-background-mobile@1x.jpg") no-repeat center top;
   }
 }
 
+/* Section Media */
 @media (min-width: 768px) {
   .section {
     padding: 22px 0;
+
+    &__title {
+      font-size: 60px;
+      line-height: 1;
+    }
 
     &--intro {
       padding-top: 0;
