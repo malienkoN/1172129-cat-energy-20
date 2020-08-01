@@ -1,0 +1,226 @@
+/* Example */
+.example {
+  &__content {
+    margin-bottom: 42px;
+  }
+
+  &__content-maintext {
+    margin-top: 33px;
+    margin-bottom: 25px;
+
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #444444;
+  }
+
+  &__content-fieldsets {
+    margin-bottom: 27px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-fieldset {
+    max-width: 124px;
+    min-height: 64px;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+
+    transform: rotateX(180deg);
+  }
+
+  &__content-legend {
+    max-width: 77px;
+
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    color: #444444;
+    font-family: "Arial", sans-serif;
+
+    transform: rotateX(180deg);
+  }
+
+  &__content-text {
+    margin: 10px 0;
+
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+
+    transform: rotateX(180deg);
+  }
+
+  &__cost {
+    font-size: 14px;
+    line-height: 1.43;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__slider-range {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__slider-scale {
+    width: 84px;
+    height: 14px;
+    background: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+  }
+
+  &__slider-toggle {
+    margin: 3px 42px 3px 5px;
+    width: 35px;
+    height: 6px;
+    background: #68b738;
+    border-radius: 6px;
+  }
+
+  &__slider-text {
+    margin: 0 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+/* Example  Media */
+@media (min-width: 768px) {
+  .example {
+    &__content {
+      margin-bottom: 60px;
+    }
+
+    &__content-maintext {
+      margin-top: 63px;
+      margin-bottom: 54px;
+
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &__content-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__content-fieldsets {
+      margin: 0;
+
+      display: flex;
+      justify-content: start;
+    }
+
+    &__content-fieldset {
+      margin-right: 42px;
+      max-width: 162px;
+      min-height: 77px;
+    }
+
+    &__content-legend {
+      max-width: 90px;
+      font-size: 14px;
+    }
+
+    &__content-text {
+      margin: 5px 15px;
+      font-size: 30px;
+      line-height: 1.23;
+    }
+
+    &__cost {
+      max-width: 174px;
+      text-align: right;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    &__cost-text {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    &__slider-photo__inner {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        object-fit: contain;
+        background: url("../img/after-tablet@1x.png") no-repeat right center;
+
+        position: absolute;
+        left: 50%;
+        top: 0;
+      }
+    }
+
+    &__slider-range {
+      margin-top: 30px;
+    }
+
+    &__slider-scale {
+      width: 428px;
+      height: 6px;
+      background: #dcdcdc;
+      border: none;
+
+      position: relative;
+    }
+
+    &__slider-toggle {
+      margin: 0;
+      width: 30px;
+      height: 30px;
+      background: #ffffff;
+      border-radius: 50%;
+      border: 1px solid #cdcdcd;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      margin-left: -15px;
+
+      box-shadow: 0 1px 3px 0 rgba(0,1,1,.2);
+      cursor: pointer;
+      outline: none;
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background: #68b738;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        margin-left: -4px;
+      }
+    }
+
+    &__slider-text {
+      margin: 0 20px;
+      font-size: 20px;
+      line-height: 1.5;
+      border-bottom: 1px dotted #cdcdcd;
+    }
+  }
+}

@@ -28,7 +28,8 @@
 
 /* Section */
 .section {
-  padding: 14px 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
 
   &__title {
     font-size: 36px;
@@ -39,14 +40,27 @@
 
   &--intro {
     padding-top: 0;
+    padding-bottom: 0;
     background: url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+  }
+
+  &--services {
+    padding-bottom: 0;
+  }
+
+  &--about {
+    padding-bottom: 42px;
+  }
+
+  &--example {
+    background: #eaeaea;
   }
 }
 
 /* Section Media */
 @media (min-width: 768px) {
   .section {
-    padding: 22px 0;
+    padding: 45px 0;
 
     &__title {
       font-size: 60px;
@@ -56,6 +70,16 @@
     &--intro {
       padding-top: 0;
       background: none;
+    }
+
+    &--services {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &--example {
+      background: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50%);
+      padding-bottom: 65px;
     }
   }
 }

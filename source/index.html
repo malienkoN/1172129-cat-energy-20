@@ -54,7 +54,7 @@
 
 
   <!-- Services -->
-  <section class="section">
+  <section class="section  section--services">
     <div class="container">
       <div class="services">
         <div class="services__item">
@@ -86,7 +86,7 @@
 
 
   <!-- About -->
-  <section class="section">
+  <section class="section  section--about">
     <div class="container">
       <h2 class="section__title">Как это работает</h2>
 
@@ -130,13 +130,13 @@
 
 
   <!-- Example -->
-  <section class="section">
+  <section class="section  section--example">
     <div class="container">
       <h2 class="section__title">Живой пример</h2>
 
       <div class="example">
         <div class="example__content">
-          <p class="example__content-text">
+          <p class="example__content-maintext">
             Борис сбросил 5 кг за 2 месяца, просто
             заменив свой обычный корм на Cat
             Energy Slim. Отличный результат без
@@ -144,26 +144,32 @@
             менял своих привычек и по-прежнему
             спит по 16 часов в день.
           </p>
+          <div class="example__content-footer">
+            <div class="example__content-fieldsets">
+              <fieldset class="example__content-fieldset">
+                <legend class="example__content-legend">снижение веса</legend>
+                <p class="example__content-text">5 КГ</p>
+              </fieldset>
+              <fieldset class="example__content-fieldset">
+                <legend class="example__content-legend">затрачено времени</legend>
+                <p class="example__content-text">60 ДНЕЙ</p>
+              </fieldset>
+            </div>
 
-          <div class="example__content-fieldsets">
-            <fieldset class="example__content-fieldset">
-              <legend class="example__content-legend">снижение веса</legend>
-              <p class="example__content-text">5 КГ</p>
-            </fieldset>
-            <fieldset class="example__content-fieldset">
-              <legend class="example__content-legend">затрачено времени</legend>
-              <p class="example__content-text">60 ДНЕЙ</p>
-            </fieldset>
-          </div>
-
-          <div class="example__cost">
-            Затраты на питание: 15 000 РУБ.
-          </div>
+            <div class="example__cost">
+              <span class="example__cost-text">Затраты на питание:</span> 15 000 РУБ.
+            </div>
+          </div><!-- ./example__footer -->
         </div><!-- ./example__content -->
+
         <div class="example__slider">
           <div class="example__slider-photo__inner"><!-- pos: relative для 2 картинки -->
-            <img class="example__slider-photo" src="https://placehold.it/250" alt="">
-            <img class="example__slider-photo" src="https://placehold.it/250" alt=""> <!-- pos: absolute и не забыть прописать object-fit: contain для восстановления пропорций картинке на позиционированнии-->
+            <picture>
+              <source srcset="img/before-desktop@1x.png" media="(min-width: 1250px)" type="image/png">
+              <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)" type="image/png">
+              <img class="img  example__slider-photo__before" src="img/before-mobile@1x.png" alt="">
+            </picture>
+             <!-- pos: absolute и не забыть прописать object-fit: contain для восстановления пропорций картинке на позиционированнии-->
           </div>
           <div class="example__slider-range">
             <p class="example__slider-text">было</p>
