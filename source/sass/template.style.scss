@@ -15,14 +15,21 @@
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  &:hover {
+    background: #5eaa2f;
+  }
 
   &--block {
     display: block;
     width: 100%;
   }
 
-  &:hover {
-    background: #5eaa2f;
+  &--gray {
+    background: #f2f2f2;
+    color: #444444;
+    &:hover {
+      background: #ebebeb;
+    }
   }
 }
 

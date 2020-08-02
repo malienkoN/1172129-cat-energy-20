@@ -163,14 +163,25 @@
         </div><!-- ./example__content -->
 
         <div class="example__slider">
-          <div class="example__slider-photo__inner"><!-- pos: relative для 2 картинки -->
+          <div class="example__slider-photo__inner-first">
             <picture>
               <source srcset="img/before-desktop@1x.png" media="(min-width: 1250px)" type="image/png">
               <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)" type="image/png">
               <img class="img  example__slider-photo__before" src="img/before-mobile@1x.png" alt="">
             </picture>
-            <!-- pos: absolute и не забыть прописать object-fit: contain для восстановления пропорций картинке на позиционированнии-->
           </div>
+
+          <div class="example__slider-photo__inner-second"></div>
+          <!--
+          <div class="example__slider-photo__inner-second">
+            <picture>
+              <source srcset="img/after-desktop@1x.png" media="(min-width: 1250px)" type="image/png">
+              <source srcset="img/after-tablet@1x.png" media="(min-width: 768px)" type="image/png">
+              <img class="example__slider-photo__after" src="img/after-mobile@1x.png" alt="">
+            </picture>
+          </div>
+          -->
+
           <div class="example__slider-range">
             <p class="example__slider-text">было</p>
 
@@ -188,7 +199,7 @@
 
 
   <!-- Address -->
-  <section class="address  address--gray">
+  <section class="address">
     <div class="container">
       <h3 class="visually-hidden">Приглашение для дилеров</h3>
       <div class="address__inner">
@@ -196,10 +207,12 @@
           приглашаем к сотрудничеству дилеров!
         </p>
         <address class="address__text">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          <span class="address__text-line">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург
         </address>
       </div>
-      <!-- Map -->
+    </div>
+    <!-- Map -->
+    <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1595345413282!5m2!1sru!2sua"
         style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0">

@@ -4,6 +4,8 @@
 @import "services.scss";
 @import "about.scss";
 @import "example.scss";
+@import "address.scss";
+@import "products.scss";
 
 body {
   margin: 0;
@@ -52,6 +54,17 @@ ol {
   max-width: 310px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }
 
 @media (min-width: 768px) {
