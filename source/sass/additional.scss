@@ -9,6 +9,7 @@
     padding-top: 13px;
     padding-bottom: 19px;
     border-top: 1px solid #cdcdcd;
+
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
     }
@@ -58,7 +59,7 @@
     max-width: 161px;
     text-align: center;
     font-family: "Arial", sans-serif;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -81,6 +82,7 @@
 
     &__list-item {
       padding: 26px 37px 28px;
+
       &:first-child {
         border-top: 0;
       }
@@ -109,6 +111,7 @@
       margin-right: 50px;
       font-size: 16px;
       line-height: 1.25;
+
       &:last-child {
         margin-right: 0;
       }
@@ -151,6 +154,7 @@
       grid-template-columns: 1fr 244px;
       column-gap: 40px;
       padding: 22px 0 17px;
+
       &:first-child {
         border-top: 1px solid #cdcdcd;
       }
@@ -162,6 +166,7 @@
 
     &__list-text {
       margin-right: 112px;
+
       &:last-child {
         margin-right: 0;
       }
