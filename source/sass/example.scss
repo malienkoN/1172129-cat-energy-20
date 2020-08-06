@@ -63,6 +63,10 @@
     color: #000000;
   }
 
+  &__slider-photo__after {
+    display: none;
+  }
+
   &__slider-range {
     margin-top: 25px;
     display: flex;
@@ -154,32 +158,48 @@
       margin-bottom: 10px;
     }
 
-    &__slider {
+    /* Example slider images */
+
+    &__slider-wrapper {
       position: relative;
+      max-width: 710px;
+      height: 620px;
+      margin: 0 auto;
+      display: flex;
     }
 
-    &__slider-photo__before {
-      display: block;
-      width: 100%;
+    &__slider-photo__inner-first,
+    &__slider-photo__inner-second {
+      width: 50%;
       height: 100%;
+      overflow: hidden;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+
+    &__slider-photo__before,
+    &__slider-photo__after {
+      height: 100%;
+      width: auto;
       object-fit: cover;
     }
 
-    &__slider-photo__inner-second {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      resize: horizontal;
-      background-image: url("../img/after-tablet@1x.png");
-      background-repeat: no-repeat;
-      background-size: auto 100%;
-      background-position: left;
-      width: 50%;
-      max-width: 100%;
+    &__slider-photo__before {
+      float: left;
     }
+
+    &__slider-photo__after {
+      display: block;
+      max-width: 100%;
+      height: auto;
+
+      float: right;
+    }
+
+    /* ./Example slider images */
 
     &__slider-range {
       margin-top: 30px;
