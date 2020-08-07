@@ -10,14 +10,14 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  background: #68b738;
+  background: $green-500;
   border: 0;
   text-decoration: none;
   cursor: pointer;
   outline: none;
 
   &:hover {
-    background: #5eaa2f;
+    background: $green-700;
   }
 
   &--block {
@@ -26,11 +26,11 @@
   }
 
   &--gray {
-    background: #f2f2f2;
-    color: #444444;
+    background: $gray-300;
+    color: $gray-900;
 
     &:hover {
-      background: #ebebeb;
+      background: $gray-350;
     }
   }
 }
@@ -62,12 +62,12 @@
   }
 
   &--example {
-    background: #eaeaea;
+    background: $gray-450;
   }
 
   &--border {
     margin-bottom: 28px;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $gray-750;
   }
 }
 
@@ -92,7 +92,7 @@
     }
 
     &--example {
-      background: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50%);
+      background: linear-gradient(to bottom, #ffffff 50%, $gray-450 50%);
       padding-bottom: 65px;
     }
 
@@ -212,7 +212,7 @@
 
 /* Footer */
 .footer {
-  background: #f2f2f2;
+  background: $gray-300;
 
   &__inner {
     display: flex;
@@ -238,7 +238,7 @@
 
   &__logo-link {
     padding-bottom: 32px;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $gray-750;
     width: 100%;
     text-align: center;
   }
@@ -264,7 +264,7 @@
     transition: fill 0.2s linear, opacity 0.2s linear;
 
     &:hover {
-      fill: #68b738;
+      fill: $green-500;
     }
 
     &:active {
@@ -281,7 +281,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $gray-750;
 
   &__logo {
     fill: #666666;
@@ -290,7 +290,7 @@
     transition: fill 0.2s linear;
 
     &:hover {
-      fill: #68b738;
+      fill: $green-500;
     }
   }
 
@@ -307,7 +307,7 @@
     font-size: 16px;
     line-height: 1.1;
     font-weight: 400;
-    color: #444444;
+    color: $gray-900;
   }
 }
 

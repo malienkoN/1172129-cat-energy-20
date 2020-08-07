@@ -18,7 +18,7 @@
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 1.3;
-    color: #444444;
+    color: $gray-900;
     font-weight: 400;
 
     &::before {
@@ -40,7 +40,7 @@
       display: block;
       width: 60px;
       height: 60px;
-      background: #68b738;
+      background: $green-500;
 
       position: absolute;
       top: -4%;

@@ -7,7 +7,7 @@
     padding-bottom: 25px;
     width: 100%;
     position: relative;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid $gray-350;
   }
 
   &__content {
@@ -28,7 +28,7 @@
 
     font-size: 16px;
     line-height: 1.25;
-    color: #222222;
+    color: $gray-950;
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -47,7 +47,7 @@
       font-family: "Arial", sans-serif;
       font-size: 12px;
       line-height: 1.33;
-      color: #444444;
+      color: $gray-900;
     }
   }
 
@@ -61,7 +61,7 @@
   &__photo-plus {
     width: 30px;
     height: 30px;
-    fill: #d3d3d3;
+    fill: $gray-700;
   }
 
   &__title-special {
@@ -72,7 +72,7 @@
     line-height: 1.25;
     text-transform: uppercase;
     text-align: center;
-    color: #111111;
+    color: $gray-1000;
     text-decoration: none;
   }
 
@@ -81,7 +81,7 @@
     font-family: "Arial", sans-serif;
     font-size: 12px;
     line-height: 1.33;
-    color: #444444;
+    color: $gray-900;
   }
 }
 
@@ -97,7 +97,7 @@
     &__item {
       padding: 161px 36px 40px;
       border: none;
-      background: #f2f2f2;
+      background: $gray-300;
     }
 
     &__content {
@@ -130,7 +130,7 @@
 
       tr {
         padding-bottom: 9px;
-        border-bottom: 1px solid #cdcdcd;
+        border-bottom: 1px solid $gray-600;
         margin-bottom: 7px;
         display: flex;
         justify-content: space-between;
@@ -155,7 +155,7 @@
 
     &__item--special {
       background: #ffffff;
-      border: 2px solid #f2f2f2;
+      border: 2px solid $gray-300;
     }
 
     &__photo-plus {

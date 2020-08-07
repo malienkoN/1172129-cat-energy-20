@@ -2,7 +2,7 @@
 .fieldset {
   padding: 0;
   border: none;
-  border-top: 2px solid #68b738;
+  border-top: 2px solid $green-500;
 
   &__title {
     padding-left: 19px;
@@ -35,7 +35,7 @@
       &::before,
       &::after {
         content: "";
-        border-top: 2px solid #68b738;
+        border-top: 2px solid $green-500;
         width: 100%;
       }
 
