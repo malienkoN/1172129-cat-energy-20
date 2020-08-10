@@ -37,6 +37,7 @@
 /* Intro  Media */
 @media (min-width: 768px) {
   .intro {
+    padding-top: 62px;
     padding-left: 90px;
     padding-bottom: 405px;
     text-align: left;
@@ -81,10 +82,11 @@
 
 @media (min-width: 1250px) {
   .intro {
+    padding-top: 111px;
     padding-bottom: 122px;
 
     &::after {
-      top: -13%;
+      top: 5%;
       left: 37%;
       z-index: 1;
     }

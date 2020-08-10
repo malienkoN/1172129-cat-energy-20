@@ -97,7 +97,7 @@
     }
 
     &--products {
-      padding-bottom: 68px;
+      padding: 65px 0;
     }
 
     &--border {
@@ -118,7 +118,7 @@
     }
 
     &--products {
-      padding-bottom: 75px;
+      padding: 75px 0;
     }
 
     &--example {
@@ -169,8 +169,7 @@
 @media (min-width: 768px) {
   .header {
     &__inner {
-      padding-top: 24px;
-      padding-bottom: 34px;
+      padding: 24px 0 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -196,8 +195,7 @@
 
   .header {
     &__inner {
-      padding-top: 53px;
-      padding-bottom: 75px;
+      padding: 53px 0 0;
     }
 
     &__logo--tablet {
