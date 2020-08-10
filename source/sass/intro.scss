@@ -87,13 +87,8 @@
 
     &::after {
       top: 5%;
-      padding-bottom: 122px;
-
-      &::after {
-        top: -13%;
-        left: 37%;
-        z-index: 1;
-      }
+      left: 37%;
+      z-index: 1;
     }
   }
 }
