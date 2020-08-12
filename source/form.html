@@ -48,26 +48,36 @@
           <p class="selection__text">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
-          <div class="selection__item">
-            <label for="name">ИМЯ:*</label>
-            <input type="text" name="name" id="name" placeholder="барсик">
+          <div class="selection__items-wrapper">
+            <div class="selection__items">
+              <div class="selection__item">
+                <label class="selection__label" for="name">ИМЯ:*</label>
+                <input class="selection__input  selection__input--name" type="text" name="name" id="name" placeholder="барсик">
+              </div>
+              <div class="selection__item">
+                <label class="selection__label" for="weight">Вес (кг):*</label>
+                <input class="selection__input  selection__input--weight" type="number" name="weight" id="weight" placeholder="7">
+              </div>
+              <div class="selection__item">
+                <label class="selection__label" for="age">Возраст (лет):</label>
+                <input class="selection__input  selection__input--age" type="number" name="age" id="age" placeholder="7">
+              </div>
+            </div><!-- /.selection__items -->
 
-            <label for="weight">Вес (кг):*</label>
-            <input type="number" name="weight" id="weight" placeholder="7">
-
-            <label for="age">Возраст (лет):</label>
-            <input type="number" name="age" id="age" placeholder="7">
-          </div><!-- /.selection__item -->
-
-          <div class="selection__item">
-            <input type="radio" name="weight-selection" id="weight-loss" checked>
-            <label for="weight-loss">похудение</label>
-
-            <input type="radio" name="weight-selection" id="weight-gain">
-            <label for="weight-gain">Набор массы</label>
-
-            <input type="radio" name="weight-selection" id="weight-unknown">
-            <label for="weight-unknown">Не знаю (Нужен ваш совет)</label>
+            <div class="selection__items  selection__items--radio">
+              <div class="selection__radio-wrapper">
+                <input class="selection__radio" type="radio" name="weight-selection" id="weight-loss" checked>
+                <label class="selection__label-special" for="weight-loss">похудение</label>
+              </div>
+              <div class="selection__radio-wrapper">
+                <input class="selection__radio" type="radio" name="weight-selection" id="weight-gain">
+                <label class="selection__label-special" for="weight-gain">Набор массы</label>
+              </div>
+              <div class="selection__radio-wrapper">
+                <input class="selection__radio" type="radio" name="weight-selection" id="weight-unknown">
+                <label class="selection__label-special" for="weight-unknown">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </div>
           </div>
         </div><!-- /.selection -->
       </div><!-- /.container -->
@@ -77,12 +87,16 @@
       <fieldset class="fieldset">
         <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
         <div class="container">
-          <div class="contacts">
-            <label for="input-email">E-mail:*</label>
-            <input type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com">
+          <div class="user-contacts">
+            <div class="user-contacts__group">
+              <label class="user-contacts__label" for="input-email">E-mail:*</label>
+              <input class="user-contacts__input  user-contacts__input--mail" type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com">
+            </div>
 
-            <label for="input-tel">Телефон:*</label>
-            <input type="tel" name="tel" id="input-tel" placeholder="8 (960) 900-60-90">
+            <div class="user-contacts__group">
+              <label class="user-contacts__label" for="input-tel">Телефон:*</label>
+              <input class="user-contacts__input  user-contacts__input--phone" type="tel" name="tel" id="input-tel" placeholder="8 (960) 900-60-90">
+            </div>
           </div>
         </div><!-- /.container -->
       </fieldset><!-- /.contacts -->

@@ -9,6 +9,8 @@
 @import "products.scss";
 @import "fieldset.scss";
 @import "additional.scss";
+@import "selection.scss";
+@import "user-contacts.scss";
 
 body {
   margin: 0;
@@ -54,7 +56,7 @@ ol {
 
 .container {
   width: 100%;
-  max-width: 310px;
+  /*max-width: 310px;*/
   margin: 0 auto;
   padding: 0 15px;
 }
