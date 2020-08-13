@@ -6,6 +6,7 @@
     margin-bottom: 14px;
     display: flex;
     align-items: center;
+    position: relative;/* для иконок */
 
     &:last-child {
       margin-bottom: 0;
@@ -19,6 +20,21 @@
     color: $gray-900;
   }
 
+  &__icon {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+
+    &--mail {
+      top: 14px;
+      stroke: #222222;
+    }
+
+    &--phone {
+      fill: #000000;
+    }
+  }
+
   &__input {
     flex-grow: 1;
     margin-left: 10px;
@@ -29,7 +45,7 @@
     transition: border 0.2s linear;
 
     &::placeholder {
-      align-items: center;
+      vertical-align: middle;
       font-family: "Oswald", sans-serif;
       font-size: 16px;
       line-height: 1.12;
@@ -45,12 +61,12 @@
       border: 2px solid $gray-900;
     }
 
-    &--mail {
-      background: url("../img/icon-mail.svg") no-repeat right 10px top 13px;
+    &:focus + .user-contacts__icon--mail {
+      stroke: $green-500;
     }
 
-    &--phone {
-      background: url("../img/icon-phone.svg") no-repeat right 10px top 11px;
+    &:focus + .user-contacts__icon--phone {
+      fill: $green-500;
     }
   }
 }
@@ -81,13 +97,14 @@
         font-size: 20px;
         line-height: 1.5;
       }
+    }
+
+    &__icon {
+      right: 20px;
+      top: 12px;
 
       &--mail {
-        background: url("../img/icon-mail.svg") no-repeat right 20px top 13px;
-      }
-
-      &--phone {
-        background: url("../img/icon-phone.svg") no-repeat right 20px top 11px;
+        top: 14px;
       }
     }
   }

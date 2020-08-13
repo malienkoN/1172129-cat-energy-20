@@ -69,6 +69,10 @@
     margin-bottom: 28px;
     border-bottom: 1px solid $gray-750;
   }
+
+  &--form {
+    padding-bottom: 32px;
+  }
 }
 
 /* Section Media */
@@ -104,6 +108,11 @@
       border: none;
       margin-bottom: 0;
     }
+
+    &--form {
+      padding-top: 65px;
+      padding-bottom: 72px;
+    }
   }
 }
 
@@ -124,6 +133,11 @@
     &--example {
       padding-bottom: 75px;
       background: linear-gradient(180deg, rgba(255, 255, 255, 1) 38%, rgba(234, 234, 234, 1) 38%);
+    }
+
+    &--form {
+      padding-top: 74px;
+      padding-bottom: 82px;
     }
   }
 }

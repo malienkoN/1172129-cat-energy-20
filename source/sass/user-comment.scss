@@ -1,0 +1,32 @@
+/* User Comment */
+.user-comment {
+  margin: 34px 0 27px;
+
+  &__textarea {
+    margin: 0;
+    padding: 13px 15px;
+    border: 1px solid $gray-425;
+    display: block;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    outline: none;
+
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 1.12;
+    color: $gray-900;
+  }
+}
+
+/* User Comment Media*/
+@media (min-width: 768px) {
+  .user-comment {
+    margin: 76px 0 65px;
+
+    &__textarea {
+      font-size: 20px;
+      line-height: 1.50;
+    }
+  }
+}

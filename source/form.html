@@ -40,7 +40,7 @@
 
 
   <!-- section -->
-  <section class="section">
+  <section class="section  section--form">
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <div class="container">
         <h1 class="section__title">Подбор программы</h1>
@@ -83,7 +83,7 @@
       </div><!-- /.container -->
 
 
-      <!-- contacts -->
+      <!-- user-contacts -->
       <fieldset class="fieldset">
         <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
         <div class="container">
@@ -91,24 +91,28 @@
             <div class="user-contacts__group">
               <label class="user-contacts__label" for="input-email">E-mail:*</label>
               <input class="user-contacts__input  user-contacts__input--mail" type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com">
+              <!-- Icon Mail -->
+              <svg class="user-contacts__icon  user-contacts__icon--mail" width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke-width="1.3" d="M1.65 5.72v8M18.65 5.72v8M1 13.07h18M1 1.07h18M18.35 2.902L10 9.397 1.65 2.902V1.37h16.7v1.532z"/></svg>
             </div>
 
             <div class="user-contacts__group">
               <label class="user-contacts__label" for="input-tel">Телефон:*</label>
               <input class="user-contacts__input  user-contacts__input--phone" type="tel" name="tel" id="input-tel" placeholder="8 (960) 900-60-90">
+              <!-- Icon Phone -->
+              <svg class="user-contacts__icon  user-contacts__icon--phone" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1a.75.75 0 000-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2a.65.65 0 00-.6-.6H3.1a1.22 1.22 0 001.2 1.2h2.5v5H3.1a1.789 1.789 0 01-1.9-1.7v-14a1.77 1.77 0 011.7-1.8h3.9v5H4.4a1.22 1.22 0 00-1.2 1.2h4.4a.65.65 0 00.6-.6V.6a.86.86 0 00-.7-.6H3.1A3 3 0 000 2.9v13.9a2.89 2.89 0 002.9 3.1h4.6a.5.5 0 00.6-.5z"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h20v20H0z"/></clipPath></defs></svg>
             </div>
           </div>
         </div><!-- /.container -->
-      </fieldset><!-- /.contacts -->
+      </fieldset><!-- /.user-contacts -->
 
 
-      <!-- comment -->
+      <!-- user-comment -->
       <fieldset class="fieldset">
         <legend class="fieldset__title">Комментарий</legend>
         <div class="container">
-          <div class="comment">
-            <textarea name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div><!-- /.comment -->
+          <div class="user-comment">
+            <textarea class="user-comment__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div><!-- /.user-comment -->
         </div><!-- /.container -->
       </fieldset><!-- /.fieldset -->
 
@@ -118,26 +122,33 @@
         <legend class="fieldset__title">Дополнительно</legend>
         <div class="container">
           <div class="extra">
-            <input type="checkbox" name="sugar" id="sugar">
-            <label for="sugar">сахарозаменитель</label>
-
-            <input type="checkbox" name="water" id="water">
-            <label for="water">питьевая вода</label>
-
-            <input type="checkbox" name="milk" id="milk">
-            <label for="milk">молоко</label>
-
-            <input type="checkbox" name="vitamins" id="vitamins">
-            <label for="vitamins">витамины</label>
+            <div class="extra__group">
+              <input class="extra__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+              <label class="extra__label" for="sugar">сахарозаменитель</label>
+            </div>
+            <div class="extra__group">
+              <input class="extra__checkbox" type="checkbox" name="water" id="water">
+              <label class="extra__label" for="water">питьевая вода</label>
+            </div>
+            <div class="extra__group">
+              <input class="extra__checkbox" type="checkbox" name="milk" id="milk">
+              <label class="extra__label" for="milk">молоко</label>
+            </div>
+            <div class="extra__group">
+              <input class="extra__checkbox" type="checkbox" name="vitamins" id="vitamins">
+              <label class="extra__label" for="vitamins">витамины</label>
+            </div>
           </div><!-- /.extra -->
         </div><!-- /.container -->
       </fieldset><!-- /.fieldset -->
 
 
-      <div class="form__submit">
+      <div class="form-submit">
         <div class="container">
-          <button class="btn" type="submit">отправить заявку</button>
-          <p class="form__submit-text">* — Обязательные поля</p>
+          <div class="form-submit__inner">
+            <button class="form-submit__btn  btn" type="submit">отправить заявку</button>
+            <p class="form-submit__text">* — Обязательные поля</p>
+          </div>
         </div>
       </div>
     </form><!-- /.form -->
