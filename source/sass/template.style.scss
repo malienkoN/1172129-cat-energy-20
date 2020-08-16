@@ -270,7 +270,7 @@
   }
 
   &__item {
-    fill: #666666;
+    fill: $gray-800;
     width: 23px;
     height: 16px;
     transition: fill 0.2s linear, opacity 0.2s linear;
@@ -285,30 +285,29 @@
   }
 }
 
-
 /* Copyright */
 .copyright {
   padding-top: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   border-top: 1px solid $gray-750;
 
   &__logo {
-    fill: #666666;
+    fill: $gray-800;
     width: 27px;
     height: 34px;
     transition: fill 0.2s linear;
-
-    &:hover {
-      fill: $green-500;
-    }
   }
 
   &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-decoration: none;
     transition: opacity 0.2s linear;
+
+    &:hover .copyright__logo {
+      fill: $green-500;
+    }
 
     &:active {
       opacity: 0.3;

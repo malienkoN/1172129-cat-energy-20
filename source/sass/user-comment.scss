@@ -16,6 +16,14 @@
     font-size: 16px;
     line-height: 1.12;
     color: $gray-900;
+
+    &:hover {
+      border: 1px solid $gray-500;
+    }
+
+    &:focus {
+      border: 2px solid $gray-900;
+    }
   }
 }
 
