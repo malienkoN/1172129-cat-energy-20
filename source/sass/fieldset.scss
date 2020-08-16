@@ -6,27 +6,18 @@
   border-top: 2px solid $green-500;
 
   &__title {
-    margin-top: -16px;
+    display: inline-block;
+    background: white;
+    width: max-content;
+    padding: 0 20px;
+    margin: -16px 0 0 -20px;
     font-size: 24px;
     line-height: 1.08;
     font-weight: 400;
     color: #000000;
-    background-color: #ffffff;
-
-    &--first {
-      max-width: 230px;
-    }
 
     &--second {
-      max-width: 187px;
-    }
-
-    &--third {
-      max-width: 125px;
-    }
-
-    &--fourth {
-      max-width: 145px;
+      max-width: 221px;
     }
   }
 }
@@ -39,20 +30,8 @@
       font-size: 36px;
       line-height: 1;
 
-      &--first {
-        max-width: 345px;
-      }
-
       &--second {
-        max-width: 520px;
-      }
-
-      &--third {
-        max-width: 185px;
-      }
-
-      &--fourth {
-        max-width: 215px;
+        max-width: 555px;
       }
     }
   }
