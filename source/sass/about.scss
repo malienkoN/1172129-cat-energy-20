@@ -1,6 +1,9 @@
 /* About */
 .about {
   margin-top: 38px;
+  max-width: 310px;/*new*/
+  margin-left: auto;/*new*/
+  margin-right: auto;/*new*/
 
   &__list {
     list-style: none;
@@ -72,6 +75,7 @@
 @media (min-width: 768px) {
   .about {
     padding-right: 79px;
+    max-width: none;/*new*/
 
     &__list {
       padding-left: 0;
