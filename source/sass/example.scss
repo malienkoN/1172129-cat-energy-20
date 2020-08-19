@@ -63,12 +63,15 @@
     color: #000000;
   }
 
+  &__slider-photo__inner-first {
+    display: flex;
+    justify-content: center;
+  }
 
   &__slider-photo__before {
     max-width: 100%;
     object-fit: contain;
   }
-
 
   &__slider-photo__after {
     display: none;
@@ -173,6 +176,11 @@
       height: 545px;
       margin: 0 auto;
       display: flex;
+    }
+
+    &__slider-photo__inner-first {
+      display: flex;
+      justify-content: start;
     }
 
     &__slider-photo__inner-first,
