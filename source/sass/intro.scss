@@ -3,6 +3,9 @@
   text-align: center;
   padding-top: 27px;
   position: relative;
+  margin-left: auto;/*new*/
+  margin-right: auto;/*new*/
+  max-width: 320px;/*new*/
 
   &__title {
     margin-bottom: 25px;
@@ -41,6 +44,7 @@
     padding-left: 90px;
     padding-bottom: 405px;
     text-align: left;
+    max-width: none;/*new*/
 
     &::after {
       content: "";
