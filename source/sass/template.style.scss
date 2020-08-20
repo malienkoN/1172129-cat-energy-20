@@ -50,7 +50,7 @@
   &--intro {
     padding-top: 0;
     padding-bottom: 0;
-    background: url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat center top, linear-gradient(180deg, #63a73a 305px, white 305px);
   }
 
   &--services {
@@ -68,6 +68,10 @@
   &--border {
     margin-bottom: 28px;
     border-bottom: 1px solid $gray-750;
+  }
+
+  &--form {
+    padding-bottom: 32px;
   }
 }
 
@@ -104,6 +108,11 @@
       border: none;
       margin-bottom: 0;
     }
+
+    &--form {
+      padding-top: 65px;
+      padding-bottom: 72px;
+    }
   }
 }
 
@@ -124,6 +133,11 @@
     &--example {
       padding-bottom: 75px;
       background: linear-gradient(180deg, rgba(255, 255, 255, 1) 38%, rgba(234, 234, 234, 1) 38%);
+    }
+
+    &--form {
+      padding-top: 74px;
+      padding-bottom: 82px;
     }
   }
 }
@@ -256,7 +270,7 @@
   }
 
   &__item {
-    fill: #666666;
+    fill: $gray-800;
     width: 23px;
     height: 16px;
     transition: fill 0.2s linear, opacity 0.2s linear;
@@ -271,30 +285,29 @@
   }
 }
 
-
 /* Copyright */
 .copyright {
   padding-top: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   border-top: 1px solid $gray-750;
 
   &__logo {
-    fill: #666666;
+    fill: $gray-800;
     width: 27px;
     height: 34px;
     transition: fill 0.2s linear;
-
-    &:hover {
-      fill: $green-500;
-    }
   }
 
   &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-decoration: none;
     transition: opacity 0.2s linear;
+
+    &:hover .copyright__logo {
+      fill: $green-500;
+    }
 
     &:active {
       opacity: 0.3;

@@ -1,3 +1,4 @@
+@import "fonts.scss";
 @import "colors.scss";
 @import "template.style.scss";
 @import "nav.scss";
@@ -9,6 +10,11 @@
 @import "products.scss";
 @import "fieldset.scss";
 @import "additional.scss";
+@import "selection.scss";
+@import "user-contacts.scss";
+@import "user-comment.scss";
+@import "extra.scss";
+@import "form-submit.scss";
 
 body {
   margin: 0;
@@ -52,9 +58,15 @@ ol {
   height: auto;
 }
 
+input,
+textarea {
+  font-family: "Oswald", sans-serif;
+  font-size: 100%;
+}
+
 .container {
   width: 100%;
-  max-width: 310px;
+  /*max-width: 310px;*/
   margin: 0 auto;
   padding: 0 15px;
 }

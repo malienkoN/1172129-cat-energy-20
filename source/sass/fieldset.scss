@@ -1,51 +1,37 @@
 /* Fieldset */
 .fieldset {
   padding: 0;
+  margin: 0;
   border: none;
   border-top: 2px solid $green-500;
 
   &__title {
-    padding-left: 19px;
-    padding-right: 22px;
-    margin-bottom: 35px;
+    display: inline-block;
+    background: white;
+    width: max-content;
+    padding: 0 20px;
+    margin: -16px 0 0 -20px;
     font-size: 24px;
     line-height: 1.08;
     font-weight: 400;
     color: #000000;
+
+    &--second {
+      max-width: 221px;
+    }
   }
 }
 
 /* Fieldset Media */
 @media (min-width: 768px) {
   .fieldset {
-    border: none;
-
     &__title {
-      padding: 0;
-      margin-bottom: 80px;
+      margin-top: -23px;
       font-size: 36px;
       line-height: 1;
 
-
-      width: 100%;
-      display: flex;
-      white-space: nowrap;
-      align-items: center;
-
-      &::before,
-      &::after {
-        content: "";
-        border-top: 2px solid $green-500;
-        width: 100%;
-      }
-
-      &::before {
-        margin-right: 36px;
-        width: 70px;
-      }
-
-      &::after {
-        margin-left: 36px;
+      &--second {
+        max-width: 555px;
       }
     }
   }

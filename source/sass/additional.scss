@@ -1,5 +1,7 @@
 /* Additional */
 .additional {
+  margin-top: 35px;
+
   &__list {
     list-style-type: none;
     margin-bottom: 40px;
@@ -41,6 +43,9 @@
   &__gift {
     margin-bottom: 35px;
     position: relative;
+    max-width: 280px;/*new*/
+    margin-left: auto;/*new*/
+    margin-right: auto;/*new*/
   }
 
   &__gift-icon {
@@ -75,6 +80,8 @@
 /* Additional Media */
 @media (min-width: 768px) {
   .additional {
+    margin-top: 80px;
+
     &__list {
       margin-bottom: 69px;
       border: 1px solid $gray-500;
@@ -119,6 +126,7 @@
 
     &__gift {
       margin-bottom: 76px;
+      max-width: none;/*new*/
     }
 
     &__gift-icon {
