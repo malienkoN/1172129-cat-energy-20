@@ -174,7 +174,7 @@
     column-gap: 80px;
 
     &__item {
-      padding: 77px 51px 55px 52px;
+      padding: 77px 51px 57px 53px;
 
       &:first-child {
         margin-bottom: 0;
@@ -183,7 +183,7 @@
 
     &__title {
       padding: 0 0 0 162px;
-      margin-bottom: 73px;
+      margin-bottom: 75px;
 
       &::before {
         top: -106%;
@@ -207,6 +207,11 @@
         width: 134px;
         height: 56px;
       }
+    }
+
+    &__text {
+      max-width: none;
+      margin-bottom: 28px;
     }
   }
 }

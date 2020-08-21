@@ -126,13 +126,18 @@
       margin-bottom: 40px;
     }
 
+    &--about {
+      padding-top: 32px;
+    }
+
     &--products {
       padding: 75px 0;
     }
 
     &--example {
-      padding-bottom: 75px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 38%, rgba(234, 234, 234, 1) 38%);
+      padding-top: 20px;
+      padding-bottom: 65px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 25.5%, rgba(242, 242, 242, 1) 25.5%);
     }
 
     &--form {

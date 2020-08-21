@@ -87,12 +87,16 @@
 @media (min-width: 1250px) {
   .intro {
     padding-top: 111px;
-    padding-bottom: 122px;
+    padding-bottom: 188px;
 
     &::after {
       top: 5%;
       left: 37%;
       z-index: 1;
+    }
+
+    &__title {
+      margin-bottom: 40px;
     }
   }
 }

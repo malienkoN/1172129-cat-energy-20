@@ -151,9 +151,15 @@
     }
 
     &__content-text {
-      margin: 5px 15px;
+      margin: 3px 45px;
       font-size: 30px;
+      white-space: nowrap;
       line-height: 1.23;
+      padding: 0;
+
+      &--another {
+        margin: 3px 15px;
+      }
     }
 
     &__cost {
@@ -216,7 +222,7 @@
     /* ./Example slider images */
 
     &__slider-range {
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     &__slider-scale {
@@ -273,6 +279,7 @@
 
 @media (min-width: 1250px) {
   .example {
+    margin-top: -113px;
     display: grid;
     grid-template-columns: 436px 1fr;
     column-gap: 134px;
