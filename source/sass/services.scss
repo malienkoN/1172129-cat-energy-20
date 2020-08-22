@@ -4,7 +4,7 @@
   flex-wrap: wrap;
 
   &__item {
-    padding: 30px 33px 18px 20px;
+    padding: 30px 33px 21px 20px;
     width: 100%;
     background-color: $gray-300;
 
@@ -73,7 +73,7 @@
   &__link {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 50px;
+    padding-right: 43px;
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -112,7 +112,7 @@
 @media (min-width: 768px) {
   .services {
     &__item {
-      padding: 77px 62px 53px 53px;
+      padding: 77px 62px 58px 63px;
 
       &:first-child {
         margin-bottom: 30px;
@@ -123,11 +123,12 @@
       padding-left: 0;
       font-size: 36px;
       line-height: 1;
-      padding-right: 449px;
+      padding-right: 0;
+      padding-bottom: 25px;
 
       &::before {
-        top: -5%;
-        left: 72%;
+        top: 4%;
+        left: 73%;
         width: 139px;
         height: 192px;
       }
@@ -135,14 +136,14 @@
       &::after {
         width: 200px;
         height: 200px;
-        top: 15%;
+        top: 25%;
         left: 67%;
       }
     }
 
     &__title--pro {
       &::before {
-        top: 65%;
+        top: 95%;
         left: 62%;
         width: 268px;
         height: 112px;
@@ -150,8 +151,9 @@
     }
 
     &__text {
+      max-width: 342px;
       padding: 0;
-      margin-bottom: 48px;
+      margin-bottom: 50px;
       max-width: 377px;
       border: 0;
 
@@ -160,7 +162,12 @@
       color: #000000;
     }
 
+    &__text--pro {
+      max-width: 342px;
+    }
+
     &__link {
+      padding-right: 50px;
       font-size: 20px;
       line-height: 1.5;
     }
@@ -211,7 +218,11 @@
 
     &__text {
       max-width: none;
-      margin-bottom: 28px;
+      margin-bottom: 25px;
+    }
+
+    &__link {
+      padding-right: 50px;
     }
   }
 }

@@ -62,7 +62,7 @@
   }
 
   &--example {
-    background: $gray-450;
+    background: #f2f2f2;
   }
 
   &--border {
@@ -72,6 +72,10 @@
 
   &--form {
     padding-bottom: 32px;
+  }
+
+  &--products {
+    padding-top: 22px;
   }
 }
 
@@ -87,6 +91,7 @@
 
     &--intro {
       padding-top: 0;
+      padding-bottom: 121px;
       background: none;
     }
 
@@ -135,7 +140,7 @@
     }
 
     &--example {
-      padding-top: 20px;
+      padding-top: 30px;
       padding-bottom: 65px;
       background: linear-gradient(180deg, rgba(255, 255, 255, 1) 25.5%, rgba(242, 242, 242, 1) 25.5%);
     }

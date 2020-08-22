@@ -16,7 +16,7 @@
   }
 
   &__subtitle {
-    padding-bottom: 310px;
+    padding-bottom: 300px;
     font-size: 14px;
     line-height: 1;
     font-weight: 400;
@@ -35,37 +35,42 @@
       left: 0;
     }
   }
+
+  &__btn {
+    padding: 10px 44px;
+  }
 }
 
 /* Intro  Media */
 @media (min-width: 768px) {
   .intro {
     padding-top: 62px;
-    padding-left: 90px;
+    padding-left: 96px;
     padding-bottom: 405px;
     text-align: left;
     max-width: none;/*new*/
 
     &::after {
       content: "";
-      width: 508px;
-      height: 495px;
-      background: url("../img/index-can-desktop@1x.png") no-repeat;
+      width: 660px;
+      height: 600px;
+      background: url("../img/index-can-tablet@1x.jpg") no-repeat;
 
       position: absolute;
-      top: 33%;
-      left: 13%;
+      top: 35%;
+      left: 1%;
       z-index: -1;
     }
 
     &__title {
+      margin-bottom: 45px;
       max-width: 414px;
       font-size: 60px;
       color: #000000;
     }
 
     &__subtitle {
-      padding-bottom: 49px;
+      padding-bottom: 47px;
       max-width: 283px;
       font-size: 20px;
       color: #000000;
@@ -87,9 +92,11 @@
 @media (min-width: 1250px) {
   .intro {
     padding-top: 111px;
+    padding-left: 83px;
     padding-bottom: 188px;
 
     &::after {
+      background: url("../img/index-can-desktop@1x.png") no-repeat;
       top: 5%;
       left: 37%;
       z-index: 1;
@@ -97,6 +104,10 @@
 
     &__title {
       margin-bottom: 40px;
+    }
+
+    &__subtitle {
+      padding-bottom: 52px;
     }
   }
 }

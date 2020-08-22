@@ -1,6 +1,6 @@
 /* About */
 .about {
-  margin-top: 38px;
+  margin-top: 44px;
   max-width: 310px;/*new*/
   margin-left: auto;/*new*/
   margin-right: auto;/*new*/
@@ -11,7 +11,11 @@
   }
 
   &__list-item {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
@@ -74,6 +78,7 @@
 /* About Media */
 @media (min-width: 768px) {
   .about {
+    margin-top: 32px;
     padding-right: 79px;
     max-width: none;/*new*/
 

@@ -11,20 +11,21 @@
   }
 
   &__content {
-    padding-left: 140px;
+    padding-bottom: 19px;
+    padding-left: 131px;
   }
 
   &__photo {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
   }
 
   &__title {
     display: inline-block;
     max-width: 76px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -34,10 +35,10 @@
   }
 
   &__table {
-    width: 142px;
-
+    width: 100%;
+    
     tr {
-      margin-bottom: 6px;
+      margin-bottom: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -109,6 +110,7 @@
 
     &__photo {
       top: -12%;
+      z-index: 1;
     }
 
     &__photo--big {
