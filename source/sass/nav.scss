@@ -105,7 +105,7 @@
 /* Nav Media */
 @media (min-width: 768px) {
   .nav {
-    padding-top: 0;
+    padding-top: 5px;
     width: auto;
     display: block;
     position: static;
@@ -115,7 +115,8 @@
       display: inline-block;
       vertical-align: top;
       padding: 0;
-      margin: 0 18px;
+      margin: 0;
+      margin-left: 28px;
       border: 0;
 
       position: relative;
@@ -151,6 +152,14 @@
 
 @media (min-width: 1250px) {
   .nav {
+    padding-top: 0;
+    
+    &__link {
+      margin-left: 25px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
     &__link--white {
       color: #ffffff;
     }
