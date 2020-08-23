@@ -66,15 +66,17 @@
   }
 
   &--border {
-    margin-bottom: 28px;
+    margin-bottom: 40px;
     border-bottom: 1px solid $gray-750;
   }
 
   &--form {
+    padding-top: 20px;
     padding-bottom: 32px;
   }
 
   &--products {
+    padding-bottom: 0;
     padding-top: 22px;
   }
 }
@@ -106,7 +108,7 @@
     }
 
     &--products {
-      padding: 65px 0;
+      padding: 65px 0 80px;
     }
 
     &--border {
@@ -136,7 +138,7 @@
     }
 
     &--products {
-      padding: 75px 0;
+      padding: 75px 0 90px;
     }
 
     &--example {

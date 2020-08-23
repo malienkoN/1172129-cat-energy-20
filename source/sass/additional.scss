@@ -75,6 +75,11 @@
     margin-left: -80px;
     z-index: 1;
   }
+
+  &__btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 /* Additional Media */
@@ -88,7 +93,7 @@
     }
 
     &__list-item {
-      padding: 26px 37px 28px;
+      padding: 26px 37px 31px;
 
       &:first-child {
         border-top: 0;
@@ -110,7 +115,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 23px;
+      margin-bottom: 25px;
     }
 
     &__list-text {
@@ -161,7 +166,7 @@
       display: grid;
       grid-template-columns: 1fr 244px;
       column-gap: 40px;
-      padding: 22px 0 17px;
+      padding: 18px 0;
 
       &:first-child {
         border-top: 1px solid $gray-500;

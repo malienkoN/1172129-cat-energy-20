@@ -11,6 +11,7 @@
     height: 150px;
     resize: none;
     outline: none;
+    text-transform: uppercase;
 
     font-family: "Oswald", sans-serif;
     font-size: 16px;
@@ -30,11 +31,20 @@
 /* User Comment Media */
 @media (min-width: 768px) {
   .user-comment {
-    margin: 76px 0 65px;
+    padding-left: 40px;
+    margin: 76px 0 85px;
 
     &__textarea {
       font-size: 20px;
       line-height: 1.5;
+      height: 175px;
     }
+  }
+}
+
+@media (min-width: 1250px) {
+  .user-comment {
+    padding-left: 0;
+    margin-bottom: 90px;
   }
 }

@@ -5,7 +5,7 @@
   }
 
   &__inner {
-    padding: 40px 0 25px;
+    padding: 30px 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +46,7 @@
 @media (min-width: 768px) {
   .address {
     &__inner {
-      padding: 65px 0 60px;
+      padding: 65px 40px 60px;
     }
 
     &__text-bold {

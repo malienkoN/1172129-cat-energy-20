@@ -1,6 +1,6 @@
 /* Selection */
 .selection {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 
   &__text {
     margin: 37px 0 39px;
@@ -20,7 +20,7 @@
     }
 
     &--radio {
-      padding: 21px 0;
+      padding: 21px 0 17px;
       border-top: 1px solid $gray-750;
       border-bottom: 1px solid $gray-750;
     }
@@ -77,7 +77,7 @@
 
   /* selection items 2 */
   &__radio-wrapper {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     transition: opacity 0.2 linear;
 
     &:last-child {
@@ -139,41 +139,72 @@
 /* Selection Media */
 @media (min-width: 768px) {
   .selection {
-    margin-bottom: 70px;
+    padding-left: 40px;
+    margin-bottom: 95px;
 
     &__text {
-      margin: 54px 0 66px;
-      max-width: 323px;
+      margin: 54px 0 70px;
+      max-width: 365px;
 
       font-size: 20px;
       line-height: 1.5;
     }
 
     &__items {
-      margin-bottom: 72px;
+      margin-bottom: 73px;
 
       &:last-child {
         margin-bottom: 0;
       }
 
       &--radio {
-        padding: 25px 0 29px 28px;
+        padding: 23px 0 25px 28px;
         border: 1px solid $gray-750;
       }
     }
 
     &__item {
-      margin-bottom: 20px;
+      margin-bottom: 23px;
 
       &:last-child {
         margin-bottom: 0;
       }
+    }
+
+    &__label {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    &__input {
+      padding: 0 15px;
+      height: 48px;
+      margin-left: 20px;
+
+      &::placeholder {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+
+    .selection__radio + label::before {
+      width: 40px;
+      height: 40px;
+      margin-right: 16px;
+    }
+
+    &__label-special {
+      font-size: 20px;
+      line-height: 1.5;
     }
   }
 }
 
 @media (min-width: 1250px) {
   .selection {
+    padding-left: 0;
+    margin-bottom: 85px;
+
     &__items {
       margin: 0;
     }

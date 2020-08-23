@@ -55,16 +55,29 @@
 /* Extra Media */
 @media (min-width: 768px) {
   .extra {
-    margin: 57px 0 54px;
+    padding-left: 40px;
+    margin: 57px 0 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
+    row-gap: 20px;
+
+    &__checkbox + label::before {
+      width: 40px;
+      height: 40px;
+      margin-right: 16px;
+    }
+
+    &__label {
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
 }
 
 @media (min-width: 1250px) {
   .extra {
-    margin: 57px 0 61px;
+    padding-left: 0;
+    margin: 57px 0 48px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 0;
   }
