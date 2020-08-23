@@ -9,6 +9,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &--index {
+      padding: 27px 0;
+    }
   }
 
   &__text-bold {
@@ -53,7 +57,7 @@
       max-width: 170px;
 
       font-size: 20px;
-      line-height: 1.05;
+      line-height: 1.1;
     }
 
     &__text {
