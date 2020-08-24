@@ -196,11 +196,12 @@
   .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
     column-gap: 80px;
-    row-gap: 144px;
+    row-gap: 142px;
 
     &__item {
-      padding: 162px 30px 43px 35px;
+      padding: 162px 30px 31px 35px;
     }
   }
 }
