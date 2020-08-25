@@ -11,20 +11,21 @@
   }
 
   &__content {
-    padding-left: 140px;
+    padding-bottom: 21px;
+    padding-left: 138px;
   }
 
   &__photo {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
   }
 
   &__title {
     display: inline-block;
     max-width: 76px;
-    margin-bottom: 18px;
+    margin-bottom: 11px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -34,10 +35,10 @@
   }
 
   &__table {
-    width: 142px;
+    width: 100%;
 
     tr {
-      margin-bottom: 6px;
+      margin-bottom: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -46,9 +47,14 @@
     td {
       font-family: "Arial", sans-serif;
       font-size: 12px;
-      line-height: 1.33;
+      line-height: 1.2;
       color: $gray-900;
     }
+  }
+
+  &__btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 
   &__item--special {
@@ -65,8 +71,8 @@
   }
 
   &__title-special {
-    margin-top: 23px;
-    margin-bottom: 21px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -95,7 +101,7 @@
     row-gap: 140px;
 
     &__item {
-      padding: 161px 36px 40px;
+      padding: 161px 36px 42px;
       border: none;
       background: $gray-300;
     }
@@ -109,6 +115,7 @@
 
     &__photo {
       top: -12%;
+      z-index: 1;
     }
 
     &__photo--big {
@@ -117,7 +124,7 @@
 
     &__title {
       max-width: 155px;
-      margin-bottom: 21px;
+      margin-bottom: 15px;
       text-align: center;
 
       font-size: 20px;
@@ -129,7 +136,7 @@
       margin-bottom: 30px;
 
       tr {
-        padding-bottom: 9px;
+        padding-bottom: 7px;
         border-bottom: 1px solid $gray-600;
         margin-bottom: 7px;
         display: flex;
@@ -189,11 +196,12 @@
   .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
     column-gap: 80px;
-    row-gap: 144px;
+    row-gap: 142px;
 
     &__item {
-      padding: 162px 30px 40px 35px;
+      padding: 162px 30px 31px 35px;
     }
   }
 }

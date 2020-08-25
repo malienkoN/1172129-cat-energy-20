@@ -26,6 +26,7 @@
 @media (min-width: 768px) {
   .fieldset {
     &__title {
+      margin-left: 20px;
       margin-top: -23px;
       font-size: 36px;
       line-height: 1;
@@ -33,6 +34,14 @@
       &--second {
         max-width: 555px;
       }
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .fieldset {
+    &__title {
+      margin-left: -20px;
     }
   }
 }

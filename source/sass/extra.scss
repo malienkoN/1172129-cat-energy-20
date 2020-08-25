@@ -55,17 +55,36 @@
 /* Extra Media */
 @media (min-width: 768px) {
   .extra {
-    margin: 57px 0 54px;
+    padding-left: 40px;
+    margin: 55px 0 57px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
+    row-gap: 33px;
+    column-gap: 27px;
+
+    &__checkbox + label::before {
+      width: 40px;
+      height: 40px;
+      margin-right: 18px;
+    }
+
+    &__label {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    &__group {
+      margin-bottom: 0;
+    }
   }
 }
 
 @media (min-width: 1250px) {
   .extra {
-    margin: 57px 0 61px;
+    padding-left: 0;
+    margin: 57px 0 62px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 0;
+    column-gap: 90px;
   }
 }

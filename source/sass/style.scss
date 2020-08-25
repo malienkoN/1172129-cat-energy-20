@@ -66,9 +66,8 @@ textarea {
 
 .container {
   width: 100%;
-  /*max-width: 310px;*/
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .visually-hidden {
@@ -85,11 +84,19 @@ textarea {
 @media (min-width: 768px) {
   .container {
     max-width: 738px;
+
+    &--form {
+      padding-right: 48px;
+    }
   }
 }
 
 @media (min-width: 1250px) {
   .container {
     max-width: 1250px;
+
+    &--form {
+      padding: 0 20px;
+    }
   }
 }

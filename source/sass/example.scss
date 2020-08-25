@@ -15,13 +15,14 @@
   }
 
   &__content-fieldsets {
-    margin-bottom: 27px;
+    margin-bottom: 23px;
 
     display: flex;
     justify-content: space-between;
   }
 
   &__content-fieldset {
+    margin: 0;
     max-width: 124px;
     min-height: 64px;
 
@@ -44,7 +45,9 @@
   }
 
   &__content-text {
-    margin: 10px 0;
+    margin: 2px 30px 5px 28px;
+    padding: 0;
+    white-space: nowrap;
 
     text-align: center;
     font-size: 24px;
@@ -53,6 +56,10 @@
     font-family: "Oswald", sans-serif;
 
     transform: rotateX(180deg);
+
+    &--another {
+      margin: 2px 10px 5px 5px;
+    }
   }
 
   &__cost {
@@ -69,7 +76,10 @@
   }
 
   &__slider-photo__before {
-    max-width: 100%;
+    margin-top: -6px;
+    margin-left: -15px;
+
+    max-width: 114%;
     object-fit: contain;
   }
 
@@ -78,7 +88,8 @@
   }
 
   &__slider-range {
-    margin-top: 25px;
+    margin-top: 32px;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,6 +125,8 @@
 /* Example  Media */
 @media (min-width: 768px) {
   .example {
+    overflow: hidden;
+
     &__content {
       margin-bottom: 60px;
     }
@@ -151,9 +164,15 @@
     }
 
     &__content-text {
-      margin: 5px 15px;
+      margin: 3px 45px;
       font-size: 30px;
+      white-space: nowrap;
       line-height: 1.23;
+      padding: 0;
+
+      &--another {
+        margin: 3px 15px;
+      }
     }
 
     &__cost {
@@ -204,6 +223,7 @@
     }
 
     &__slider-photo__before {
+      margin: 0;
       max-width: initial;
       float: left;
     }
@@ -216,7 +236,8 @@
     /* ./Example slider images */
 
     &__slider-range {
-      margin-top: 30px;
+      margin-top: 0;
+      margin-left: 0;
     }
 
     &__slider-scale {
@@ -273,6 +294,7 @@
 
 @media (min-width: 1250px) {
   .example {
+    margin-top: -113px;
     display: grid;
     grid-template-columns: 436px 1fr;
     column-gap: 134px;
@@ -284,6 +306,7 @@
 
     &__content-maintext {
       margin: 0;
+      margin-top: 50px;
       margin-bottom: 69px;
     }
 
@@ -310,6 +333,10 @@
     &__slider-wrapper {
       max-width: 705px;
       height: 536px;
+    }
+
+    &__slider-range {
+      margin-top: 20px;
     }
   }
 }

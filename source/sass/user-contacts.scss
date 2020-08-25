@@ -74,10 +74,11 @@
 /* User-Contacts  Media */
 @media (min-width: 768px) {
   .user-contacts {
-    margin: 75px 0 65px;
+    padding-left: 40px;
+    margin: 75px 0 87px;
 
     &__group {
-      margin-bottom: 20px;
+      margin-bottom: 24px;
 
       &:last-child {
         margin-bottom: 0;
@@ -90,6 +91,7 @@
     }
 
     &__input {
+      height: 48px;
       margin-left: 20px;
       padding: 0 50px 0 15px;
 
@@ -112,6 +114,8 @@
 
 @media (min-width: 1250px) {
   .user-contacts {
+    margin: 79px 0 88px;
+    padding-left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;

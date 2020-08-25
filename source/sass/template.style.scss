@@ -62,16 +62,23 @@
   }
 
   &--example {
-    background: $gray-450;
+    padding-bottom: 30px;
+    background: #f2f2f2;
   }
 
   &--border {
-    margin-bottom: 28px;
+    margin-bottom: 40px;
     border-bottom: 1px solid $gray-750;
   }
 
   &--form {
+    padding-top: 20px;
     padding-bottom: 32px;
+  }
+
+  &--products {
+    padding-bottom: 0;
+    padding-top: 22px;
   }
 }
 
@@ -87,6 +94,7 @@
 
     &--intro {
       padding-top: 0;
+      padding-bottom: 121px;
       background: none;
     }
 
@@ -101,7 +109,7 @@
     }
 
     &--products {
-      padding: 65px 0;
+      padding: 65px 0 80px;
     }
 
     &--border {
@@ -126,13 +134,18 @@
       margin-bottom: 40px;
     }
 
+    &--about {
+      padding-top: 32px;
+    }
+
     &--products {
-      padding: 75px 0;
+      padding: 75px 0 95px;
     }
 
     &--example {
-      padding-bottom: 75px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 38%, rgba(234, 234, 234, 1) 38%);
+      padding-top: 30px;
+      padding-bottom: 65px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 25.5%, rgba(242, 242, 242, 1) 25.5%);
     }
 
     &--form {
@@ -275,6 +288,16 @@
     height: 16px;
     transition: fill 0.2s linear, opacity 0.2s linear;
 
+    &--instagram {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--facebook {
+      width: 22px;
+      height: 22px;
+    }
+
     &:hover {
       fill: $green-500;
     }
@@ -315,6 +338,7 @@
   }
 
   &__text {
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.1;
     font-weight: 400;
@@ -338,11 +362,22 @@
   }
 
   .social {
+    margin-left: 25px;
     padding: 0;
 
     &__item {
       width: 30px;
       height: 22px;
+
+      &--instagram {
+        width: 23px;
+        height: 23px;
+      }
+
+      &--facebook {
+        width: 13px;
+        height: 27px;
+      }
     }
   }
 

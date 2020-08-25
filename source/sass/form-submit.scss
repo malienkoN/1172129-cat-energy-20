@@ -8,6 +8,8 @@
     display: block;
     width: 100%;
     margin-bottom: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__text {
@@ -21,6 +23,8 @@
 /* Form-Submit Media */
 @media (min-width: 768px) {
   .form-submit {
+    padding-left: 56px;
+
     &__inner {
       display: flex;
       align-items: center;
@@ -44,6 +48,8 @@
 
 @media (min-width: 1250px) {
   .form-submit {
+    padding-left: 0;
+
     &__btn {
       width: 568px;
       margin-right: 81px;
