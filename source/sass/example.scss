@@ -303,10 +303,15 @@
       margin: 0;
     }
 
+    &__content-legend {
+      max-width: none;
+      padding: 0 6px;
+    }
+
     &__content-maintext {
       margin: 0;
       margin-top: 50px;
-      margin-bottom: 69px;
+      margin-bottom: 68px;
     }
 
     &__content-footer {
@@ -316,10 +321,11 @@
     }
 
     &__content-fieldsets {
-      margin-bottom: 59px;
+      margin-bottom: 57px;
     }
 
     &__cost {
+      padding-bottom: 8px;
       margin-top: 0;
       max-width: initial;
       text-align: left;
