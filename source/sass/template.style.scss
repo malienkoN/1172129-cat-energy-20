@@ -244,7 +244,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 39px 0 22px;
+    padding: 34px 0 22px;
   }
 
   &__logo {
@@ -262,7 +262,7 @@
   }
 
   &__logo-link {
-    padding-bottom: 32px;
+    padding-bottom: 28px;
     border-bottom: 1px solid $gray-750;
     width: 100%;
     text-align: center;
@@ -271,7 +271,7 @@
 
 /* Social */
 .social {
-  padding: 20px 0;
+  padding: 20px 0 17px;
   width: 130px;
 
   display: flex;
