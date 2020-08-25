@@ -5,7 +5,7 @@
   }
 
   &__content-maintext {
-    margin-top: 33px;
+    margin-top: 36px;
     margin-bottom: 25px;
 
     font-family: "Arial", sans-serif;
@@ -15,7 +15,7 @@
   }
 
   &__content-fieldsets {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 
     display: flex;
     justify-content: space-between;
@@ -88,7 +88,7 @@
   }
 
   &__slider-range {
-    margin-top: 28px;
+    margin-top: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +157,8 @@
     }
 
     &__content-legend {
-      max-width: 90px;
+      max-width: none;
+      padding: 0 6px;
       font-size: 14px;
     }
 
@@ -235,7 +236,7 @@
     /* ./Example slider images */
 
     &__slider-range {
-      margin-top: 0;
+      margin-top: 5px;
       margin-left: 0;
     }
 
@@ -301,11 +302,6 @@
 
     &__content {
       margin: 0;
-    }
-
-    &__content-legend {
-      max-width: none;
-      padding: 0 6px;
     }
 
     &__content-maintext {
