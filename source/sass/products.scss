@@ -58,6 +58,7 @@
   }
 
   &__item--special {
+    padding-top: 26px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +72,7 @@
   }
 
   &__title-special {
-    margin-top: 25px;
+    margin-top: 19px;
     margin-bottom: 10px;
 
     font-size: 16px;

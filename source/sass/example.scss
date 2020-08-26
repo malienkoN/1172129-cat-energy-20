@@ -5,7 +5,7 @@
   }
 
   &__content-maintext {
-    margin-top: 33px;
+    margin-top: 36px;
     margin-bottom: 25px;
 
     font-family: "Arial", sans-serif;
@@ -15,7 +15,7 @@
   }
 
   &__content-fieldsets {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 
     display: flex;
     justify-content: space-between;
@@ -88,8 +88,7 @@
   }
 
   &__slider-range {
-    margin-top: 32px;
-    margin-left: 10px;
+    margin-top: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +111,7 @@
   }
 
   &__slider-text {
-    margin: 0 15px;
+    margin: 0 15px 0 20px;
     font-size: 16px;
     line-height: 1.25;
     color: #000000;
@@ -142,7 +141,6 @@
     &__content-footer {
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
 
     &__content-fieldsets {
@@ -159,7 +157,8 @@
     }
 
     &__content-legend {
-      max-width: 90px;
+      max-width: none;
+      padding: 0 6px;
       font-size: 14px;
     }
 
@@ -176,6 +175,7 @@
     }
 
     &__cost {
+      margin-top: 10px;
       max-width: 174px;
       text-align: right;
       font-size: 20px;
@@ -236,7 +236,7 @@
     /* ./Example slider images */
 
     &__slider-range {
-      margin-top: 0;
+      margin-top: 5px;
       margin-left: 0;
     }
 
@@ -307,7 +307,7 @@
     &__content-maintext {
       margin: 0;
       margin-top: 50px;
-      margin-bottom: 69px;
+      margin-bottom: 68px;
     }
 
     &__content-footer {
@@ -317,10 +317,12 @@
     }
 
     &__content-fieldsets {
-      margin-bottom: 55px;
+      margin-bottom: 57px;
     }
 
     &__cost {
+      padding-bottom: 8px;
+      margin-top: 0;
       max-width: initial;
       text-align: left;
     }
