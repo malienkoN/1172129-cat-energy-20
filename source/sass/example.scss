@@ -1,5 +1,7 @@
 /* Example */
 .example {
+  overflow: hidden;
+
   &__content {
     margin-bottom: 42px;
   }
@@ -124,8 +126,6 @@
 /* Example  Media */
 @media (min-width: 768px) {
   .example {
-    overflow: hidden;
-
     &__content {
       margin-bottom: 60px;
     }
