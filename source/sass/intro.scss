@@ -33,6 +33,11 @@
       position: absolute;
       top: 43px;
       left: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-mobile@2x.png");
+        background-size: cover;
+      }
     }
   }
 
@@ -60,6 +65,11 @@
       top: 35%;
       left: 1%;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+        background-size: cover;
+      }
     }
 
     &__title {
@@ -100,6 +110,11 @@
       top: 5%;
       left: 37%;
       z-index: 1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+        background-size: 552px;
+      }
     }
 
     &__title {
