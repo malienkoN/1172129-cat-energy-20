@@ -293,23 +293,37 @@
   }
 
   &__item {
-    fill: $gray-800;
     width: 23px;
     height: 16px;
-    transition: fill 0.2s linear, opacity 0.2s linear;
+    transition: fill 0.2s linear, opacity 0.2s linear, stroke 0.2s linear;
+
+    &--vk {
+      fill: $gray-800;
+
+      &:hover {
+        fill: $green-500;
+      }
+    }
 
     &--instagram {
+      fill: $gray-800;
       width: 16px;
       height: 16px;
+
+      &:hover {
+        fill: $green-500;
+      }
     }
 
     &--facebook {
+      fill: none;
+      stroke: $gray-800;
       width: 22px;
       height: 22px;
-    }
 
-    &:hover {
-      fill: $green-500;
+      &:hover {
+        stroke: $green-500;
+      }
     }
 
     &:active {
@@ -385,8 +399,8 @@
       }
 
       &--facebook {
-        width: 13px;
-        height: 27px;
+        width: 28px;
+        height: 33px;
       }
     }
   }
