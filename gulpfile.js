@@ -8,6 +8,7 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -53,6 +54,16 @@ const Webp = () => {
 
 exports.Webp = Webp;
 
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.sprite = sprite;
 
 // Server
 
