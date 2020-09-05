@@ -15,9 +15,14 @@
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  transition: background-color 0.2s linear;
 
   &:hover {
     background: $green-700;
+  }
+
+  &:focus {
+    color: rgba(white, 0.3);
   }
 
   &--block {
@@ -31,6 +36,10 @@
 
     &:hover {
       background: $gray-350;
+    }
+
+    &:focus {
+      color: rgba($gray-900, 0.3);
     }
   }
 }
