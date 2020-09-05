@@ -10,6 +10,9 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
 const sync = require("browser-sync").create();
 
 // Styles
@@ -66,14 +69,34 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// Html
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build/"))
+}
+
+exports.html = html;
+
+// Uglify
+
+const Uglify = () => {
+  return pipeline(
+    gulp.src("source/js/**"),
+    uglify(),
+    gulp.dest("build/js/")
+  );
+}
+
+exports.Uglify = Uglify;
+
 // Copy
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/*.html",
     "source/*.ico"
   ], {
     base: "source"
@@ -95,7 +118,9 @@ exports.clean = clean;
 
 const build = gulp.series(
   clean,
+  html,
   styles,
+  Uglify,
   sprite,
   copy
 );
