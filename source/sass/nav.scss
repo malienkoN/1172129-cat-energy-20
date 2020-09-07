@@ -49,10 +49,6 @@
   border: 0;
   background: 0 0;
   cursor: pointer;
-  //position: absolute;
-  //right: 0;
-  //top: 50%;
-  //transform: translateY(-50%);
   outline: none;
 }
 
@@ -83,10 +79,6 @@
   &::after {
     top: 8px;
   }
-}
-
-.nav-toggle.active {
-  top: 12.5%;
 }
 
 .nav-toggle.active .nav-toggle__item {
