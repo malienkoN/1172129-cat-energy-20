@@ -38,6 +38,7 @@
 
 .nav.active {
   display: block;
+  order: 1;
 }
 
 .nav-toggle {
@@ -48,10 +49,10 @@
   border: 0;
   background: 0 0;
   cursor: pointer;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  //position: absolute;
+  //right: 0;
+  //top: 50%;
+  //transform: translateY(-50%);
   outline: none;
 }
 
