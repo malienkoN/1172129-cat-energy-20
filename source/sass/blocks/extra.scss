@@ -48,7 +48,7 @@
 
   &__checkbox:checked + label::before {
     background-color: #ffffff;
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
   }
 
   &__label {
